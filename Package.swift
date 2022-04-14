@@ -1,4 +1,4 @@
-// swift-tools-version: 5.6
+// swift-tools-version: 5.1
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "AudioMonitor",
-            targets: ["AudioMonitor"]),
+            targets: ["AudioMonitor"])
     ],
     dependencies: [],
     targets: [
@@ -17,6 +17,6 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "AudioMonitorTests",
-            dependencies: ["AudioMonitor"]),
+            dependencies: ["AudioMonitor"])
     ]
 )
