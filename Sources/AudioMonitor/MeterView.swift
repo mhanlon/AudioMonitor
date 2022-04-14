@@ -8,13 +8,13 @@
 import SwiftUI
 
 public struct MeterView: View {
-    var volume: Double = 0.0
-    var stepByValue: Double = 0.075
-    var volumes: [Double] {
+    public var volume: Double = 0.0
+    public var stepByValue: Double = 0.075
+    public var volumes: [Double] {
         Array(stride(from: 0.0, to: 1.0, by: stepByValue))
     }
     
-    var body: some View {
+    public var body: some View {
         HStack {
             ForEach(volumes, id: \.self) { value in 
                 RoundedRectangle(cornerRadius: 5)
