@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MeterView: View {
+public struct MeterView: View {
     var volume: Double = 0.0
     var stepByValue: Double = 0.075
     var volumes: [Double] {

@@ -30,7 +30,7 @@ private let AudioController_RenderCallback: AURenderCallback = {(inRefCon, ioAct
     return result
 }
 
-class AudioMonitor: AURenderCallbackDelegate {
+public class AudioMonitor: AURenderCallbackDelegate {
     let sampleRate = 44100.0
     let autocorrelationDepth:UInt = 512
     var accumulationLength:UInt = 16384
