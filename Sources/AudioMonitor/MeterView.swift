@@ -14,6 +14,11 @@ public struct MeterView: View {
         Array(stride(from: 0.0, to: 1.0, by: stepByValue))
     }
     
+    public init(volume: Double = 0.0, stepByValue: Double = 0.075) {
+        self.volume = volume
+        self.stepByValue = stepByValue
+    }
+    
     public var body: some View {
         HStack {
             ForEach(volumes, id: \.self) { value in 
